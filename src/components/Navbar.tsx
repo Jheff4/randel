@@ -24,8 +24,8 @@ const Navbar = () => {
           <Image
             src="/Union.svg"
             alt="logo"
-            width={40}
-            height={30}
+            width={55}
+            height={55}
             className="block md:hidden order-1"
           />
         </Link>
@@ -89,61 +89,61 @@ const Navbar = () => {
           </li>
         </ul>)
           :
-        (<ul className='flex-center gap-x-10 max-md:order-3 max-md:bg-cardinalPink-100 max-md:h-screen max-md:flex-col max-md:gap-10 max-md:w-full max-md:justify-start max-md:pt-[5rem] max-md:flex-start relative'>
-          <li className='!font-bold max-md:hidden'>
-            <Link
-              href="#"
-              target="_blank"
-            >
-              Home
-            </Link>
-          </li>
-          <li className='!font-bold md:hidden'>
-            <Link
-              href="/dashboard"
-              target=""
-            >
-              Dashboard
-            </Link>
-          </li>
-          <li className='!font-bold md:hidden'>
-            <Link
-              href="/markets"
-              target=""
-            >
-              Markets
-            </Link>
-          </li>
-          <li className='!font-bold'>
-            <Link
-              href="https://lensly-finance.gitbook.io/lensly-document/"
-              target="#"
-            >
-              WhitePaper
-            </Link>
-          </li>
-          <li className='!font-bold md:hidden'>
-            <Link
-              href="/governance"
-              target=""
-            >
-              Governance
-            </Link>
-          </li>
-          <li className='!font-bold md:hidden'>
-            <Link
-              href="/stakes"
-              target=""
-            >
-              Stakes
-            </Link>
-          </li>
-          <li className='!font-bold'>
+        (<ul className='flex-center gap-x-10 max-md:order-3 max-md:h-screen max-md:flex-col max-md:gap-10 max-md:w-full max-md:justify-start max-md:pt-[5rem] max-md:flex-start relative'>
+          <li className='!font-bold flex justify-center items-center px-5 py-[1.35rem] rounded-2xl bg-secondary md:hidden'>
             <Link
               href=""
               target=""
             >
-              FAQ
+              <Image
+                src="/docs.svg"
+                alt="docs"
+                width={25}
+                height={25}
+                className=""
+              />
+            </Link>
+          </li>
+          <li className='!font-bold flex justify-center items-center px-5 py-[1.1rem] rounded-2xl bg-secondary md:hidden'>
+            <Link
+              href=""
+              target=""
+            >
+              <Image
+                src="/discord.svg"
+                alt="discord"
+                width={25}
+                height={25}
+                className=""
+              />
+            </Link>
+          </li>
+          <li className='!font-bold flex px-5 py-[1.15rem] rounded-2xl bg-secondary md:hidden'>
+            <Link
+              href=""
+              target=""
+            >
+              <Image
+                src="/X.svg"
+                alt="twitter"
+                width={23}
+                height={23}
+                className=""
+              />
+            </Link>
+          </li>
+          <li className='!font-bold flex px-5 py-[1.2rem] rounded-2xl bg-secondary md:hidden'>
+            <Link
+              href=""
+              target=""
+            >
+              <Image
+                src="/telegram.svg"
+                alt="telegram"
+                width={23}
+                height={23}
+                className=""
+              />
             </Link>
           </li>
         </ul>)
@@ -156,9 +156,9 @@ const Navbar = () => {
           </Button>
 
           {navbar ? (<HiMenu 
-            className="block md:hidden bg-razzmatazz p-1 font-semibold rounded-[8px] text-[40px] cursor-pointer"
+            className="block md:hidden bg-ebonyClay p-1 font-semibold rounded-[8px] text-[40px] cursor-pointer"
             onClick={() => setNavbar(!navbar)}
-          /> ) : ( <HiX className="block md:hidden bg-razzmatazz p-1 font-semibold rounded-[8px] transition-all text-[40px] order-2 cursor-pointer"
+          /> ) : ( <HiX className="block md:hidden bg-ebonyClay p-1 font-semibold rounded-[8px] transition-all text-[40px] order-2 cursor-pointer"
             onClick={() => setNavbar(!navbar)}
           />) }
         </div>

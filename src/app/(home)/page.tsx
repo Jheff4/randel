@@ -1,16 +1,49 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper"
+import Image from 'next/image'
 
-export default function Home() {
+const Home = () => {
   return (
-    <MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
-      main
+    <MaxWidthWrapper className="mb-12 mt-[7.1rem] w-full ">
+      <main className="">
+        <section className="mx-auto flex w-full mb-[4rem]">
+          <Image
+            src="/bg-texture.svg"
+            alt="background"
+            width={100}
+            height={100}
+            className="max-md:hidden w-full -ml-3"
+          />
+          
+          <Image
+            src="/bg-mob.svg"
+            alt="background"
+            width={100}
+            height={100}
+            className="md:hidden w-full"
+          />
+        </section>
+        
+        <section className="mx-auto w-full">
+          <Image
+            src="/bg-texture.svg"
+            alt="background"
+            width={100}
+            height={100}
+            className="max-md:hidden w-full -ml-3"
+          />
+
+          <Image
+            src="/bg-mob.svg"
+            alt="background"
+            width={100}
+            height={100}
+            className="md:hidden w-full"
+          />
+        </section>
+        
+      </main>
     </MaxWidthWrapper>
   )
 }
 
-
-{/* <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
-  <p className="text-sm font-semibold text-gray-700">
-    Randel is now public!
-  </p>
-</div> */}
+export default Home

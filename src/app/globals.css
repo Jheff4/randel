@@ -118,6 +118,18 @@
     background: var(--gradient-1, linear-gradient(138deg, #42F4FF 23.52%, #9665FF 87.11%));
   }
 
+  .btn-gradient:hover {
+    background: linear-gradient(138deg, #FFF 23.52%, #AE88FF 87.11%);
+  }
+  
+  .btn-norm {
+    @apply flex justify-center items-center px-12 py-4 rounded-lg text-white text-[1.1rem] font-semibold leading-[100%] bg-secondary;
+  }
+
+  /* .bg-texture {
+    background-image: url('/bg-texture.png');
+  } */
+
   /* Hide scrollbar for Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
