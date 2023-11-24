@@ -4,7 +4,7 @@ import { Button } from '../ui/button';
 
 const Cta = () => {
   return (
-    <MaxWidthWrapper className='flex flex-col items-center w-full fixed max-h-screen h-fit inset-0 align-bottom mt-[15rem] gap-7 mb-7 max-md:px-12'>
+    <MaxWidthWrapper className='flex flex-col items-center w-full fixed max-h-screen inset-0 justify-center mt-[15rem] gap-7 mb-7 max-md:px-12'>
 
       <div className='max-w-[50rem] text-white text-[4rem] max-md:text-[2.5rem] font-semibold leading-[112%] -mb-2 text-center'>
       Rediscover Defi on <br/>Flare with Randel
